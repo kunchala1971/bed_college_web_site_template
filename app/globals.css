@@ -2,8 +2,6 @@
    VIVEKANANDA COLLEGE OF EDUCATION - CORE DESIGN SYSTEM
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
-
 :root {
   --primary-navy: #0b1f40;
   --primary-blue: #1e3a8a;
@@ -374,7 +372,7 @@ img {
 .hero-section {
   position: relative;
   min-height: 540px;
-  background: linear-gradient(135deg, rgba(11, 31, 64, 0.88) 0%, rgba(30, 64, 175, 0.75) 100%), url('../images/hero-campus.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(11, 31, 64, 0.88) 0%, rgba(30, 64, 175, 0.75) 100%), url('/images/hero-campus.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   color: #ffffff;
