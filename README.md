@@ -1,8 +1,8 @@
-# Vivekananda College of Education — Official Website
+# Vivekananda College of Education — Official Website (Next.js)
 
 Official web application for **Vivekananda College of Education**, a premier NCTE-approved Bachelor of Education (B.Ed) institution situated at **Throvagunta (V), Ongole (Mdl), Prakasam District, Andhra Pradesh - 523 262**.
 
-Managed by **Sri Ganesh Educational Trust** (Registered 15-11-2021) and affiliated to **Sri Venkateswara University, Tirupati** / **Andhra Kesari University, Ongole**.
+Managed by **Sri Ganesh Educational Trust** (Registered 15-11-2021) and affiliated to **Sri Venkateswara University, Tirupati**.
 
 ---
 
@@ -22,23 +22,23 @@ Managed by **Sri Ganesh Educational Trust** (Registered 15-11-2021) and affiliat
 
 ---
 
-## 🌐 Web Pages Directory
+## 🌐 Routes Directory
 
-The website consists of 13 static HTML pages:
+The website is built with **Next.js (App Router)** and includes 13 routes:
 
-1. **`index.html`** — Main homepage featuring hero banner, latest news ticker, feature cards, methodology overview, management leadership cards, and quick contact details.
-2. **`aboutus.html`** — Vision, mission, institutional history, trust management, and campus infrastructure highlights.
-3. **`ncteinfo.html`** — Mandatory NCTE Disclosure Matrix, shifting application details, and official PDF download cards.
-4. **`affidavits.html`** — Land ownership deed affidavits, encumbrance certificates (EC), land use, building completion, structural stability, and Fire NOC download table.
-5. **`formalrecognization.html`** — Government orders, NCTE Southern Regional Committee recognition orders (2026 & 2003), and shifting permission applications.
-6. **`stafflist.html`** — Official 16-member approved teaching faculty profile grid (Principal Dr. B. Krishnaiah & Lecturers) and direct PDF download.
-7. **`team.html`** — Governing body leadership profile cards for President Divi Ramesh, Secretary & Correspondent Gutlapalli Veera Babu, and Treasurer Pentrala Subba Rao.
-8. **`gallery.html`** — Interactive photo gallery showcasing 16 real campus photos (classrooms, ICT lab, science labs, psychology lab, library, multipurpose hall, sports facility) with full-screen lightbox modal.
-9. **`coursesoffered.html`** — B.Ed course structure, methodology subjects (Mathematics, Physical Science, Biological Science, Social Studies, English, Telugu), and syllabus details.
-10. **`admissioncreteria.html`** — Admission eligibility rules, AP EDCET web counselling selection steps, and seat matrix.
-11. **`auditreport.html`** — Financial audit statements, CA balance sheets, and statutory Fixed Deposit Receipt (FDR) PDF download.
-12. **`results.html`** — Official university examination results notice and academic contact guidance.
-13. **`contactus.html`** — Interactive contact form, phone, email, full postal address, transport landmark guides, and Google Maps search location.
+1. **`/`** — Main homepage featuring hero banner, latest news ticker, feature cards, methodology overview, management leadership cards, and quick contact details.
+2. **`/aboutus`** — Vision, mission, institutional history, trust management, and campus infrastructure highlights.
+3. **`/ncteinfo`** — Mandatory NCTE Disclosure Matrix, shifting application details, and official PDF download cards.
+4. **`/affidavits`** — Land ownership deed affidavits, encumbrance certificates (EC), land use, building completion, structural stability, and Fire NOC download table.
+5. **`/formalrecognization`** — Government orders, NCTE Southern Regional Committee recognition orders (2026 & 2003), and shifting permission applications.
+6. **`/stafflist`** — Official 16-member approved teaching faculty profile grid (Principal Dr. B. Krishnaiah & Lecturers) and direct PDF download.
+7. **`/team`** — Governing body leadership profile cards for President Divi Ramesh, Secretary & Correspondent Gutlapalli Veera Babu, and Treasurer Pentrala Subba Rao.
+8. **`/gallery`** — Interactive photo gallery showcasing campus photos with full-screen lightbox modal.
+9. **`/coursesoffered`** — B.Ed course structure, methodology subjects (Mathematics, Physical Science, Biological Science, Social Studies, English, Telugu), and syllabus details.
+10. **`/admissioncreteria`** — Admission eligibility rules, AP EDCET web counselling selection steps, and seat matrix.
+11. **`/auditreport`** — Financial audit statements, CA balance sheets, and statutory Fixed Deposit Receipt (FDR) PDF download.
+12. **`/results`** — Official university examination results notice and academic contact guidance.
+13. **`/contactus`** — Interactive inquiry form, phone, email, full postal address, transport landmark guides, and Google Maps location.
 
 ---
 
@@ -46,60 +46,69 @@ The website consists of 13 static HTML pages:
 
 ```
 bed_college_web_site_template/
-├── index.html                   # Main Landing Page
-├── aboutus.html                 # About Us & Vision
-├── ncteinfo.html                # Mandatory NCTE Disclosures
-├── affidavits.html              # Land & Safety Compliance Affidavits
-├── formalrecognization.html     # NCTE & Govt Orders
-├── stafflist.html               # Approved Staff Profile Table
-├── team.html                    # Management Leadership Team
-├── gallery.html                 # Campus Photo Gallery
-├── coursesoffered.html          # B.Ed Methodologies & Curriculum
-├── admissioncreteria.html       # Admissions & AP EDCET Guidelines
-├── auditreport.html             # Audit Reports & FDR
-├── results.html                 # University Results Notice
-├── contactus.html               # Contact Cards & Inquiry Form
-├── css/
-│   └── style.css                # Custom Design System & Responsive Styles
-├── js/
-│   └── main.js                  # Sticky Header, Mobile Nav, Counter & Lightbox Logic
-├── docs/                        # 18 Official Compliance & Statutory PDF Documents
-│   ├── 002_REGISTRATION.pdf
-│   ├── 003_NCTE ORDER - 2003.pdf
-│   ├── 003_NCTE ORDER - 2026.pdf
-│   ├── 004_SHIFTING APPLICATION.pdf
-│   ├── 005_CERTIFIED SALE DEED.PDF
-│   ├── 006_SALE DEED ENGLISH.pdf
-│   ├── 007_EC.pdf
-│   ├── 008_LAND USE CERTIFICATE.pdf
-│   ├── 009_MUTATION CERTIFICATE.pdf
-│   ├── 010_BUILDING COMPLETION.pdf
-│   ├── 011_BARRIER FREE.pdf
-│   ├── 012_PLAN.pdf
-│   ├── 013_STAFF LIST.PDF
-│   ├── 014_F.D.R.pdf
-│   ├── 016_STRUCTURAL STABILITY.pdf
-│   └── 017_FIRE NOC.pdf
-└── images/                      # 16 Authentic Campus Photos & Institutional Assets
-    ├── hero-campus.jpg
-    ├── logo.jpg
-    ├── BLOCK B.jpeg
-    ├── CLASS ROOM -1.jpeg
-    ├── COMPUTER LAB & ICT RESEARCH CENTER.jpeg
-    ├── SCIENCE LAB - 1.jpeg
-    ├── PSYCHOLOGY LAB.jpeg
-    ├── LIBRARY.jpeg
-    └── MULTIPURPSE HALL.jpeg
+├── app/                         # Next.js App Router Pages & Layouts
+│   ├── globals.css              # Custom CSS Design System
+│   ├── layout.tsx               # Root Layout (TopBar, Header, Ticker, Footer)
+│   ├── page.tsx                 # Home Page
+│   ├── aboutus/page.tsx
+│   ├── admissioncreteria/page.tsx
+│   ├── affidavits/page.tsx
+│   ├── auditreport/page.tsx
+│   ├── contactus/page.tsx
+│   ├── coursesoffered/page.tsx
+│   ├── formalrecognization/page.tsx
+│   ├── gallery/page.tsx
+│   ├── ncteinfo/page.tsx
+│   ├── results/page.tsx
+│   ├── stafflist/page.tsx
+│   └── team/page.tsx
+├── components/                  # Reusable UI Components
+│   ├── AnnouncementTicker.tsx
+│   ├── ContactForm.tsx
+│   ├── Footer.tsx
+│   ├── GalleryModal.tsx
+│   ├── Header.tsx
+│   ├── StatsBanner.tsx
+│   └── TopBar.tsx
+├── public/                      # Static Assets
+│   ├── docs/                    # Official Statutory PDF Documents
+│   └── images/                  # Campus Photos & Logos
+├── next.config.js               # Next.js Configuration (output: 'export')
+├── package.json                 # Project Dependencies & Scripts
+└── tsconfig.json                # TypeScript Configuration
 ```
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **HTML5**: Semantic web markup with accessibility compliance.
-- **Vanilla CSS3**: Responsive CSS design system with CSS Variables, Flexbox, and CSS Grid.
-- **JavaScript (ES6+)**: Dynamic interactivity (mobile drawer, sticky header, stat counter, modal lightbox).
-- **FontAwesome 6**: Vector icons for intuitive visual indicators.
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript / React 18
+- **Styling**: Custom CSS (Vanilla CSS Design System - No Bootstrap, No Tailwind)
+- **Icons**: FontAwesome 6
+- **Build Output**: Static Export Enabled (`output: 'export'`)
+
+---
+
+## 🚀 Development & Build Scripts
+
+```bash
+# Install dependencies
+npm install
+
+# Start local development server (http://localhost:3000)
+npm run dev
+
+# Build production static export (generates out/ directory)
+npm run build
+```
+
+---
+
+## 📦 Hosting & Deployment
+
+- **Standard cPanel / Shared Hosting / Web Root**: Upload the contents of the generated **`out/`** folder directly to your web server (`public_html/`).
+- **Vercel / Render / Cloud Hosting**: Connect this repository; the build system will automatically execute `npm run build`.
 
 ---
 
